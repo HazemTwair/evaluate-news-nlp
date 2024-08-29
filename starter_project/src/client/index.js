@@ -1,9 +1,6 @@
 // js files
 import { handleSubmit } from './js/formHandler'
-import { checkForName } from './js/nameChecker'
-
-alert("I EXIST")
-// console.log("CHANGE!!");
+import { isValidUrl } from './js/urlValidator'
 
 // sass files
 import './styles/resets.scss'

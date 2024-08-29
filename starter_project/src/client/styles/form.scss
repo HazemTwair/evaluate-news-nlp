@@ -2,6 +2,36 @@ form {
     border: 1px solid #545454;
     border-radius: 3px;
     padding: 40px;
+
+    & button {
+        background-image: radial-gradient(
+            100% 100% at 100% 0,
+            #5adaff 0,
+            #5468ff 100%
+        );
+        border: 0;
+        border-radius: 6px;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+            rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+            rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+        height: 48px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 18px;
+        font-family: "JetBrains Mono", monospace;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+                rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            box-shadow: #3c4fe0 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+    }
 }
 
 input {
@@ -9,4 +39,21 @@ input {
     width: 100%;
     line-height: 16px;
     margin: 10px 0;
+}
+
+#results-heading {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#results {
+    padding: 0 10px;
+
+    & p {
+        margin: 10px 0;
+
+        & span {
+            font-weight: bold;
+        }
+    }
 }
